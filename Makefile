@@ -5,7 +5,7 @@ DEVKITPRO ?= /opt/devkitpro
 LIBNDS    := $(DEVKITPRO)/libnds
 
 TARGET  := crypt-delver
-SRC     := $(wildcard source/*.c)
+SRC     := $(wildcard source/*.c) $(wildcard *.c)
 OBJ     := $(SRC:.c=.o)
 
 PREFIX  := $(DEVKITARM)/bin/arm-none-eabi-
