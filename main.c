@@ -1,5 +1,6 @@
 #include <nds.h>
 #include <stdio.h>
+#include <time.h>
 #include "game.h"
 
 static PrintConsole topCon, botCon;
