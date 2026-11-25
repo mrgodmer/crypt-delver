@@ -12,9 +12,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build
         run: make
+      - name: Show official template
+        run: |
+          ls /opt/devkitpro/calico/bin
+          cat /opt/devkitpro/examples/nds/hello_world/Makefile
       - name: Upload ROM
         uses: actions/upload-artifact@v4
         with:
           name: crypt-delver-nds
           path: crypt-delver.nds
-
